@@ -1,4 +1,4 @@
-## INTODUÇÃO HTML TESTE 1
+## INTODUÇÃO HTML 
 
 ## DESCRIÇÃO
 
@@ -6,5 +6,5 @@
 
 ## INSTRUÇÕES
 
-## Executar o arquivo 'index.html' no seu navegador para rodar a aplicação
+## Executar o arquivo  no seu navegador para rodar a aplicação
 
