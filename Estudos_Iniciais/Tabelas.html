@@ -10,15 +10,20 @@
     <style>
         table {
             border-collapse: collapse;
-            width: 100%;
+            width: 800%;
         }
 
-        table td, table th {
+        table td,
+        table th {
             border: 1px solid #ccc;
             padding: 5px;
             text-align: left;
         }
-        body{font-family: sans-serif;}
+
+        body {
+            font-family: sans-serif;
+        }
+
         table caption {
             caption-side: top;
             text-align: center;
@@ -30,49 +35,56 @@
 
         tfoot td {
             background-color: #ddd;
-            
+
         }
 
+        .responsive-table {
+            max-width: 100%;
+            overflow-x: auto;
+        }
     </style>
 </head>
 
 <body>
     <p>Lorem ipsum dolor, sit amet consectetur</p>
-    <table>
-        <caption>Titulo da Tabela</caption>
-        <thead>
-            <tr>
-                <th>Títutlo 1</th>
-                <th>Títutlo 2</th>
-                <th>Títutlo 3</th>
-            </tr>
-        </thead>
+    <div class="responsive-table">
+        <table>
+            <caption>Titulo da Tabela</caption>
+            <thead>
+                <tr>
+                    <th>Títutlo 1</th>
+                    <th>Títutlo 2</th>
+                    <th>Títutlo 3</th>
+                </tr>
+            </thead>
 
-        <tbody>
-            <tr>
-                <td>Corpo 1</td>
-                <td>Corpo 2</td>
-                <td>Corpo 3</td>
-            </tr>
-            <tr>
-                <td>Corpo 4</td>
-                <td>Corpo 5</td>
-                <td>Corpo 6</td>
-            </tr>
-            <tr>
-                <td>Corpo 7</td>
-                <td>Corpo 8</td>
-                <td>Corpo 9</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="2" rowspan="2"></td>
-                <td>TOTAL:<br> R$ 500,00</td>
-            </tr>
-          
-        </tfoot>
-    </table>
+            <tbody>
+                <tr>
+                    <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, debitis cumque voluptates e
+                    </td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Corpo 4</td>
+
+                    <td>Corpo 6</td>
+                </tr>
+                <tr>
+                    <td>Corpo 7</td>
+                    <td>Corpo 8</td>
+                    <td>Corpo 9</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2" rowspan="2"> Preço</td>
+                    <td>TOTAL:<br> R$ 500,00</td>
+                </tr>
+
+            </tfoot>
+        </table>
+    </div>
 </body>
 
 </html>
