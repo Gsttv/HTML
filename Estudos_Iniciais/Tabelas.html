@@ -13,16 +13,24 @@
             width: 100%;
         }
 
-        table td,
-        table th {
+        table td, table th {
             border: 1px solid #ccc;
             padding: 5px;
+            text-align: left;
         }
         body{font-family: sans-serif;}
         table caption {
             caption-side: top;
-            text-align: left;
+            text-align: center;
+            font-style: italic;
+            margin-bottom: 15px;
+            font-size: 15px;
 
+        }
+
+        tfoot td {
+            background-color: #ddd;
+            
         }
 
     </style>
@@ -57,6 +65,13 @@
                 <td>Corpo 9</td>
             </tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2" rowspan="2"></td>
+                <td>TOTAL:<br> R$ 500,00</td>
+            </tr>
+          
+        </tfoot>
     </table>
 </body>
 
